@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
-       progressBar = (ProgressBar) findViewById(R.id.progressbar);
+        progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
         findViewById(R.id.textViewSignup).setOnClickListener(this);
         findViewById(R.id.buttonLogin).setOnClickListener(this);
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.textViewSignup:
-                Toast.makeText(getApplicationContext(),"asdfgjnvv",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"SignUp Clicked",Toast.LENGTH_SHORT).show();
                // finish();
                 startActivity(new Intent(this, SignUpActivity.class));
                 break;
